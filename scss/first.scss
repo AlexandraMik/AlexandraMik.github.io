@@ -1,0 +1,139 @@
+.first{
+    position: relative;
+    height: auto;
+    margin-top: -70px;
+    z-index: 1;
+    background-image: url(/img/car1.png);
+    &__container{
+        padding-top: 200px;
+        padding-bottom: 130px;
+        @media (max-width:$breakpoint-lg){
+            padding-bottom: calc(15px + 92 * ((100vw - 320px) / 950));
+        }
+    }
+    &__text{
+        color: #fff;
+        &_h{
+            margin-top: 0px;   
+            font-weight: bold;  
+            margin-bottom: 20px; 
+        }
+        &_d{
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 40px;
+            color: #ffffff;
+            max-width: 600px;
+            margin-top:0px;
+            @media (max-width: 1270px){
+                margin-bottom: calc(20px + 20 * ((100vw - 320px) / 950));
+                line-height: calc(21px + 8 * ((100vw - 320px) / 950));
+                font-size: calc(16px + 8 * ((100vw - 320px) / 950));
+            }
+        }
+    }
+    &__btn{
+        margin-bottom: 50px;
+    }
+}
+.calculator {
+    display: flex;
+    justify-content: space-between;
+    margin: 56px 0px 0px 0px;
+    align-items: flex-end;
+    @media screen and (max-width:992px){
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        margin: 64px 48px;
+    }
+
+    &__title {
+        text-align: start;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &>p {
+            margin: 8px;
+            text-align: start;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+    }
+    &__group:last-child{
+        @media screen and (max-width:992px){
+            margin:-2px;
+        }
+    }
+
+    &__kg {
+        margin: 0;
+        text-align: right;
+        color: #333333;
+    }
+
+    &__input1 {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #FFFFFF;
+        border:none;
+        box-sizing: border-box;
+        color: #B0B0B0;
+        padding: 19px 8px;
+        width: 100%;
+        &>img {
+            width:20px;
+            height:20px;
+            margin-left: 6px;
+            margin-right: 8px;
+        }
+    }
+
+    &__input2 {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        border:none;
+        box-sizing: border-box;
+        color: #B0B0B0;
+        width: 100%;
+        padding: 19px 26px 19px 8px;
+    }
+
+    &__subgroup {
+        display: flex;
+        &>img {
+            width:20px;
+            height:20px;
+            margin-left: 6px;
+            margin-right: 8px;
+        }
+    }
+
+    &__button {
+        margin: 30px 0px 0px 00px;
+        display: inline-block;
+        cursor: pointer;
+        padding: 20px 50px;
+        background-color: #DB2F09;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFf;
+    }
+    &__arrow {
+        padding: 7.5px 32px;
+        background-color: #FFFFFF;
+        &>img {
+            width:40px;
+            height:40px;
+        }
+        @media screen and (max-width:992px){
+            display: none;
+        }  
+    }
+}

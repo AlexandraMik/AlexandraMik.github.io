@@ -1,0 +1,84 @@
+.questions{
+    position: relative;
+    height: auto;
+    margin-top: -70px;
+    z-index: 1;
+    background-image: url(/img/road.png);
+    &__container{
+        position: relative;
+    }
+    &__title{
+        color: #fff;
+        margin-bottom: 70px;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__subtitle{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        gap: 19px;
+        color: #fff;
+    }
+    &__data{
+        &__row{
+            display: flex;
+            align-items: center;
+            p{
+            font-weight: bold;
+            gap: 19px;
+            font-size: 24px;
+            color: #fff;
+            }
+        }
+    }
+}
+.questions:not(._not-p) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.form{
+    max-width: 600px;
+    &__col{
+        flex: 0 1 50%;
+    }
+    &__row{
+        display: flex;
+        gap: 30px;
+        color: #fff;
+        input{
+            border-radius: 0 !important;
+            width: 100%;
+            display: block;
+            padding: 20px;
+        }
+    }
+    &__title{
+        font-size: 24px;
+        max-width: 395px;
+        line-height: 29px;
+        margin-top: 0;
+        margin-bottom: 32px;
+        color: #fff;
+    }
+    &__btn{
+        max-width: unset;
+        margin-top: 16px;
+        height: 40px;
+    }
+
+}
+.form_hide{
+    @media (max-width: 995px) {
+        display: none;
+    }
+}
+._gray{
+    color: gray;
+}
